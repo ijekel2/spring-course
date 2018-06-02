@@ -1,0 +1,5 @@
+package org.nathanjekel.spring.springcore;
+
+public class Employee {
+
+}

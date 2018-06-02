@@ -1,0 +1,26 @@
+INDEX VERSION 1.130+/Users/nathanjekel/Documents/Coding/spring-course/.metadata/.plugins/org.eclipse.jdt.core
+4166604845.index
+1260736551.index
+1524350763.index
+3759278787.index
+2309822661.index
+4018134042.index
+357478278.index
+2901689040.index
+4158956476.index
+609331307.index
+809514828.index
+1271342938.index
+3637929226.index
+3969190818.index
+2961435131.index
+487047335.index
+659411456.index
+518397319.index
+2402075489.index
+1682850884.index
+3260451924.index
+2162021020.index
+1522203103.index
+2718728712.index
+3574958047.index
