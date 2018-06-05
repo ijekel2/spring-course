@@ -8,9 +8,7 @@ public class TestEmployee {
 		
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/nathanjekel/spring/springcore/constructorinjection/constructorinjectionconfig.xml");
 		Employee employee = (Employee) context.getBean("employee");
-		Employee employee2 = (Employee) context.getBean("employee");
-		System.out.println(employee.hashCode());
-		System.out.println(employee2.hashCode());
+		System.out.println(employee);
 		context.close();
 	}
 	

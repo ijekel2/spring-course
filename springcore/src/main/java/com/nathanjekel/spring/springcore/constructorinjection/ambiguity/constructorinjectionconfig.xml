@@ -7,11 +7,12 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <bean name="employee" class="com.nathanjekel.spring.springcore.innerbeans.Employee" p:id="100" scope="prototype" >
-    	<property name="address">
-    		<bean class="com.nathanjekel.spring.springcore.innerbeans.Address" p:houseNum="25" p:street="Walnut" p:city="Pittsburgh"/>
-    	</property>
-    </bean>
+    <-- index attribute used to eliminate ambiguity in argument order --!>
+    <bean name="addition" class="com.nathanjekel.spring.springcore.constructorinjection.ambiguity.Addition">
+    	<constructor-arg value="20.3" type="double" index="1"/>
+    	<constructor-arg value="10" type="int" index="0"/>
 
-	<context:annotation-config/>
+    </bean>
+   
+
 </beans>
