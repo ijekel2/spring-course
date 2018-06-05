@@ -6,16 +6,12 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    
-    <bean name="nationalLanguages" class="com.nathanjekel.spring.springcore.properties.NationalLanguages">
-		<property name="nationalLanguages">
-    		<props>
-    			<prop key="USA">English</prop>
-    			<prop key="India">Hindi</prop>
-    			<prop key="France">French</prop>
-    		</props>
-    	</property>
-    		
-    </bean>
-    
+
+    <bean name="scores" class="com.nathanjekel.spring.springcore.reftypes.Scores" p:math="80" p:physics="90" p:chemistry="85"></bean>
+	<bean name="student" class="com.nathanjekel.spring.springcore.reftypes.Student" p:scores-ref="scores">
+<!-- 		<property name="scores"> -->
+<!-- 			<ref bean="scores"/> -->
+<!-- 		</property> -->
+	</bean>
+
 </beans>
