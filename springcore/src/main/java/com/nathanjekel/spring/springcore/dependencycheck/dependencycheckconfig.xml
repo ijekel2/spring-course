@@ -7,8 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <bean name="patient" class="com.nathanjekel.spring.springcore.lc.annotations.Patient" p:id="100" init-method="init" destroy-method="destroy"/>
-    <bean name="ticketReservation" class="com.nathanjekel.spring.springcore.lc.annotations.TicketReservation" p:id="100" init-method="initialize" destroy-method="cleanUp"/>
+    <bean name="prescription" class="com.nathanjekel.spring.springcore.dependencycheck.Prescription" p:id="100"/>
 
 	<context:annotation-config/>
 </beans>

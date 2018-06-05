@@ -7,8 +7,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <bean name="patient" class="com.nathanjekel.spring.springcore.lc.annotations.Patient" p:id="100" init-method="init" destroy-method="destroy"/>
-    <bean name="ticketReservation" class="com.nathanjekel.spring.springcore.lc.annotations.TicketReservation" p:id="100" init-method="initialize" destroy-method="cleanUp"/>
+    <bean name="employee" class="com.nathanjekel.spring.springcore.innerbeans.Employee" p:id="100" scope="prototype" >
+    	<property name="address">
+    		<bean class="com.nathanjekel.spring.springcore.innerbeans.Address" p:houseNum="25" p:street="Walnut" p:city="Pittsburgh"/>
+    	</property>
+    </bean>
 
 	<context:annotation-config/>
 </beans>
